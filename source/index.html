@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Путешествие по Европе</title>
+    <title>Way — туристическая компания</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -11,8 +11,245 @@
     <link rel="preload" href="fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Путешествие по Европе</h1>
-
+    <header class="main-header">
+      <div class="main-header__top section">
+        <div class="section__wrapper">
+          <nav class="main-nav">
+            <a class="main-nav__logo">Way</a>
+            <ul class="main-nav__menu menu">
+              <li class="menu__item">
+                <a class="menu__link" href="#">О путешествии</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Цены</a>
+              </li>
+            </ul>
+            <a class="main-nav__phone" href="tel:+749978468446">+7 (499) 784-684-46</a>
+          </nav>
+        </div>
+      </div>
+      <div class="main-header__bottom section">
+        <div class="section__wrapper">
+          <div class="promo">
+            <div class="promo__content">
+              <p class="promo__title">Путешествие по Европе</p>
+              <p class="promo__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
+              <a class="btn" href="#">Cмотреть тур</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <h1 class="visually-hidden">Туристическая компания Way — туры по Европе</h1>
+      <section class="locations section">
+        <div class="section__wrapper">
+          <h2 class="section__title">Места посещения</h2>
+          <p class="section__description">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+          <div class="locations__list">
+            <div class="locations__item location">
+              <a class="location__link" href="#">
+                <img class="location__photo" src="https://via.placeholder.com/350x430" width="350" height="430" alt="Монастырь Святой Троицы">
+                <p class="location__name">Греция</p>
+              </a>
+            </div>
+            <div class="locations__item location">
+              <a class="location__link" href="#">
+                <img class="location__photo" src="https://via.placeholder.com/350x430" width="350" height="430" alt="Пляж с высоты птичьего полета">
+                <p class="location__name">Албания</p>
+              </a>
+            </div>
+            <div class="locations__item location">
+              <a class="location__link" href="#">
+                <img class="location__photo" src="https://via.placeholder.com/350x430" width="350" height="430" alt="Церковь Святого Иоанна Канео">
+                <p class="location__name">Македония</p>
+              </a>
+            </div>
+            <div class="locations__item location">
+              <a class="location__link" href="#">
+                <img class="location__photo" src="https://via.placeholder.com/350x430" width="350" height="430" alt="Каньон реки Тары">
+                <p class="location__name">Черногория</p>
+              </a>
+            </div>
+            <div class="locations__item location">
+              <a class="location__link" href="#">
+                <img class="location__photo" src="https://via.placeholder.com/350x430" width="350" height="430" alt="Карстовая пещера">
+                <p class="location__name">Хорватия</p>
+              </a>
+            </div>
+          </div>
+          <div class="locations__info locations-info">
+            <div class="locations-info__tabs locations-tabs">
+              <button class="locations-tabs__item location-tab" type="button">Греция</button>
+              <button class="locations-tabs__item location-tab" type="button">Албания</button>
+              <button class="locations-tabs__item location-tab" type="button">Македония</button>
+              <button class="locations-tabs__item location-tab" type="button">Черногория</button>
+              <button class="locations-tabs__item location-tab" type="button">Хорватия</button>
+            </div>
+            <div class="locations-info__list">
+              <div class="locations-info__item location-info">
+                <div class="location-info__main info-main">
+                  <h3 class="info-main__title">Греция</h3>
+                  <p class="info-main__description">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
+                  <a class="btn" href="#">Купить тур сейчас</a>
+                </div>
+                <div class="location-info__review info-review">
+                  <div class="info-review__wrapper">
+                    <h4 class="info-review__title">Отзывы</h4>
+                    <blockquote class="info-review__content review-content">
+                      <p class="review-content__quote">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
+                      <div class="review-content__author review-author">
+                        <img class="review-author__photo" width="38" height="38" alt="Фото девушки с каре в элегантном платье" src="img/reviews-author.png">
+                        <cite class="review-author__name">Оксана Тодоренко</cite>
+                      </div>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pricing section">
+        <div class="section__wrapper">
+          <div class="pricing__about pricing-about">
+            <h2 class="section__title">Цены</h2>
+            <p class="section__description">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
+            <div class="pricing-about__contacts pricing-contacts">
+              <p class="pricing-contacts__title">Свяжитесь с нами</p>
+              <a class="pricing-contacts__phone" href="tel:+749978468446">+7 (499) 784-684-46</a>
+            </div>
+          </div>
+          <div class="pricing__packages pricing-packages">
+            <div class="pricing-packages__item pricing-package">
+              <div class="pricing-package__group">
+                <div class="pricing-package__subgroup">
+                  <h3 class="pricing-package__title">Комплексный</h3>
+                  <p class="pricing-package__price">$1999</p>
+                </div>
+                <p class="pricing-package__description">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              </div>
+              <ul class="pricing-package__features package-features">
+                <li class="package-features__item">Разработанный маршрут с гидом группы</li>
+                <li class="package-features__item">Перелет, трансфер и проживание в отелях</li>
+                <li class="package-features__item">Завтраки, ужины в отелях и ланчи на природе</li>
+                <li class="package-features__item">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+              <a class="btn" href="#">Купить тур сейчас</a>
+            </div>
+            <div class="pricing-packages__item pricing-package">
+              <div class="pricing-package__group">
+                <div class="pricing-package__subgroup">
+                  <h3 class="pricing-package__title">Экономный</h3>
+                  <p class="pricing-package__price">$1399</p>
+                </div>
+                <p class="pricing-package__description">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              </div>
+              <ul class="pricing-package__features package-features">
+                <li class="package-features__item">Разработанный маршрут с гидом группы</li>
+                <li class="package-features__item">Перелет и трансфер</li>
+                <li class="package-features__item">Проживание в хостелах при отелях</li>
+                <li class="package-features__item">Только завтраки в отелях</li>
+                <li class="package-features__item">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+              <a class="btn" href="#">Купить тур сейчас</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback section">
+        <div class="section__wrapper">
+          <h2 class="visually-hidden">Обратная связь</h2>
+          <div class="feedback__wrapper">
+            <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="feedback-form__header">
+                <p class="feedback-form__title">У Вас остались вопросы?</p>
+                <p class="feedback-form__description">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+              </div>
+              <div class="feedback-form__group">
+                <div class="feedback-form__subgroup">
+                  <label class="feedback-form__label visually-hidden" for="feedback-tel">Ваш телефон:</label>
+                  <input class="feedback-form__input" id="feedback-tel" type="tel" name="tel" placeholder="Введите 10 цифр номера" required>
+                </div>
+                <div class="feedback-form__subgroup">
+                  <label class="feedback-form__label visually-hidden" for="feedback-email">Ваш e-mail:</label>
+                  <input class="feedback-form__input" id="feedback-email" type="email" name="email" placeholder="E-mail">
+                </div>
+              </div>
+              <button class="btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer section">
+      <div class="section__wrapper">
+        <h2 class="visually-hidden">Дополнительная информация</h2>
+        <div class="main-footer__content">
+          <div class="main-footer__travel-to footer-section available-cities">
+            <h3 class="footer-section__title">Следующие путешествия</h3>
+            <div class="available-cities__group">
+              <ul class="available-cities__list">
+                <li class="available-cities__item">Марсель</li>
+                <li class="available-cities__item">Ним</li>
+                <li class="available-cities__item">Монпелье</li>
+                <li class="available-cities__item">Барселона</li>
+                <li class="available-cities__item">Пальма</li>
+              </ul>
+              <ul class="available-cities__list">
+                <li class="available-cities__item">Сардиния</li>
+                <li class="available-cities__item">Палермо</li>
+                <li class="available-cities__item">Катания</li>
+                <li class="available-cities__item">Неаполь</li>
+                <li class="available-cities__item">Рим</li>
+              </ul>
+              <ul class="available-cities__list">
+                <li class="available-cities__item">Корс</li>
+                <li class="available-cities__item">Ницца</li>
+                <li class="available-cities__item">Монако</li>
+                <li class="available-cities__item">Динь-ле-Бен</li>
+                <li class="available-cities__item">Гренобль</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-footer__contacts footer-section company-contacts">
+            <h3 class="footer-section__title">Наши контакты</h3>
+            <ul class="company-contacts__list">
+              <li class="company-contacts__item">
+                <a class="company-contacts__email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+              </li>
+              <li class="company-contacts__item">
+                <a class="company-contacts__phone" href="tel:+749978468446">+7 (499) 784-684-46</a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__for-companies footer-section for-companies">
+            <h3 class="footer-section__title">Корпоративные путешествия</h3>
+            <p class="footer-section__description">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="modal modal--order">
+      <h2 class="visually-hidden">Заказ тура</h2>
+      <div class="modal__content">
+        <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="order-form__title">Купить тур</p>
+          <div class="order-form__group">
+            <div class="order-form__subgroup">
+              <label class="order-form__label visually-hidden" for="order-tel">Ваш телефон:</label>
+              <input class="order-form__input" id="order-tel" type="tel" name="tel" placeholder="Введите 10 цифр номера" required>
+            </div>
+            <div class="order-form__subgroup">
+              <label class="order-form__label visually-hidden" for="order-email">Ваш e-mail:</label>
+              <input class="order-form__input" id="order-email" type="email" name="email" placeholder="E-mail">
+            </div>
+          </div>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+      </div>
+      <button class="modal__close" type="button" aria-label="Закрыть"></button>
+    </section>
     <script src="js/script.min.js"></script>
   </body>
 </html>
