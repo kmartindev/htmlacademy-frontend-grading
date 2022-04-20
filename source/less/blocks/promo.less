@@ -1,1 +1,56 @@
-//
+.promo {
+  @media (min-width: @tablet-width) {
+    background-color: @main-header-bg;
+  }
+}
+
+.promo__group--top {
+  background-color: @main-header-bg;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.promo__title {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  text-align: center;
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 55px;
+    line-height: 80px;
+    text-align: left;
+    letter-spacing: -1.10667px;
+  }
+}
+
+.promo__description {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  text-align: center;
+  color: @base;
+  letter-spacing: -0.466667px;
+
+  @media (min-width: @tablet-width) {
+    color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}

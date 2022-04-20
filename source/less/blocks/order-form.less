@@ -1,1 +1,32 @@
-//
+.order-form__title {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 43px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  text-align: center;
+  color: @grey;
+}
+
+.order-form__input {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: @base-secondary;
+
+  background-color: @white;
+  border: 1px solid @base-30;
+}
+
+.order-form__input::placeholder {
+  color: @base-secondary;
+}
+
+.order-form__input:invalid {
+  border-color: @accent;
+}

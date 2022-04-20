@@ -1,1 +1,38 @@
-//
+.info-main__title {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  text-align: center;
+  color: @base;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 55px;
+    line-height: 90px;
+    text-align: left;
+    letter-spacing: -1.245px;
+  }
+}
+
+.info-main__description {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  text-align: center;
+  color: @base-70;
+  letter-spacing: -0.466667px;
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}

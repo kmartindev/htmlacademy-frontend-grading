@@ -1,1 +1,29 @@
-//
+.location__link {
+  text-decoration: none;
+}
+
+.location__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 288px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 350px;
+  }
+}
+
+.location__name {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  text-align: center;
+  color: @base;
+  letter-spacing: -0.415px;
+}

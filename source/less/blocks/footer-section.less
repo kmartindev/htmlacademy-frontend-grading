@@ -1,1 +1,37 @@
-//
+.footer-section__title {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  text-align: center;
+  color: @base-secondary;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+}
+
+.footer-section__title--for-companies {
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
+
+.footer-section__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  text-align: center;
+  color: @base-secondary-50;
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}

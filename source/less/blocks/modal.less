@@ -1,1 +1,27 @@
-//
+.modal {
+  display: none;
+}
+
+.modal__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  padding: 0;
+
+  color: @base-secondary-20;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: @background;
+  }
+
+  &:active {
+    color: @base-secondary-10;
+  }
+}

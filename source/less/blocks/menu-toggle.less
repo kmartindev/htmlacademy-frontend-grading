@@ -1,0 +1,50 @@
+.menu-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.menu-toggle--closed {
+  color: @white;
+
+  background-color: @accent;
+
+  &:hover,
+  &:focus {
+    background-color: @accent-secondary;
+  }
+
+  &:active {
+    color: @white-30;
+  }
+}
+
+.menu-toggle--opened {
+  color: @base-secondary-20;
+
+  background-color: @white;
+
+  &:hover,
+  &:focus {
+    background-color: @background;
+  }
+
+  &:active {
+    color: @base-secondary-10;
+  }
+}
+
+.menu-toggle--closed .menu-toggle__close,
+.menu-toggle--opened .menu-toggle__open {
+  display: none;
+}
