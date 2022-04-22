@@ -9,6 +9,10 @@
   border: none;
   cursor: pointer;
 
+  @media (min-width: @tablet-width) {
+    width: 72px;
+  }
+
   @media (min-width: @desktop-width) {
     display: none;
   }
@@ -46,5 +50,9 @@
 
 .menu-toggle--closed .menu-toggle__close,
 .menu-toggle--opened .menu-toggle__open {
+  display: none;
+}
+
+.menu-toggle--nojs {
   display: none;
 }

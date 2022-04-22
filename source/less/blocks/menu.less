@@ -1,8 +1,48 @@
 .menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  display: none;
+  flex-direction: column;
   margin: 0;
   padding: 0;
+  padding-top: 133px;
+  padding-bottom: 285px;
 
   list-style: none;
+  background-color: @white;
+  box-shadow: 0px 4px 30px @shadow-10;
+
+  @media (min-width: @desktop-width) {
+    position: static;
+
+    display: flex;
+    flex-direction: row;
+    margin-right: 70px;
+    margin-left: auto;
+    padding: 0;
+    box-shadow: none;
+  }
+}
+
+.menu__item {
+  margin-bottom: 30px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.menu__item:last-child {
+  margin-bottom: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .menu__link {
@@ -51,4 +91,10 @@
       color: @accent-30;
     }
   }
+}
+
+.menu--nojs {
+  position: static;
+
+  display: block;
 }

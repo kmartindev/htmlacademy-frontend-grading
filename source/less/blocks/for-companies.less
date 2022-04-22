@@ -1,1 +1,13 @@
-//
+.for-companies {
+  padding-top: 29px;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: auto;
+    padding-top: 0;
+    padding-left: 55px;
+  }
+}

@@ -1,6 +1,19 @@
+.review-author {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .review-author__photo {
   display: block;
   margin: 0 auto;
+  margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-right: 15px;
+  }
 }
 
 .review-author__name {

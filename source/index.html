@@ -14,9 +14,9 @@
     <header class="main-header">
       <div class="main-header__top section">
         <nav class="main-nav">
-          <div class="section__wrapper section__wrapper--general">
-            <div class="main-nav__group">
-              <div class="section__wrapper section__wrapper--personal">
+          <div class="section__wrapper">
+            <div class="main-nav__wrapper">
+              <div class="main-nav__group">
                 <a class="main-nav__logo">
                   <img class="main-nav__logo-img" src="img/logo.svg" width="48" height="18" alt="Логотип Way">
                 </a>
@@ -25,16 +25,16 @@
                   <svg class="menu-toggle__close" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </button>
               </div>
+              <ul class="main-nav__menu menu menu--nojs">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">О путешествии</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Цены</a>
+                </li>
+              </ul>
+              <a class="main-nav__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
             </div>
-            <ul class="main-nav__menu menu menu--nojs">
-              <li class="menu__item">
-                <a class="menu__link" href="#">О путешествии</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Цены</a>
-              </li>
-            </ul>
-            <a class="main-nav__phone" href="tel:+749978468446">+7 (499) 784-684-46</a>
           </div>
         </nav>
       </div>
@@ -57,9 +57,9 @@
     <main class="main-content">
       <h1 class="visually-hidden">Туристическая компания Way — туры по Европе</h1>
       <section class="locations section">
-        <div class="section__wrapper">
-          <h2 class="section__title">Места посещения</h2>
-          <p class="section__description">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+        <div class="section__wrapper section__wrapper--locations">
+          <h2 class="section__title section__title--locations">Места посещения</h2>
+          <p class="section__description section__description--locations">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
           <div class="locations__list">
             <div class="locations__item location">
               <a class="location__link" href="#">
@@ -92,29 +92,37 @@
               </a>
             </div>
           </div>
-          <div class="locations__info locations-info">
-            <div class="locations-info__tabs locations-tabs">
-              <button class="locations-tabs__item location-tab location-tab--current" type="button">Греция</button>
-              <button class="locations-tabs__item location-tab" type="button">Албания</button>
-              <button class="locations-tabs__item location-tab" type="button">Македония</button>
-              <button class="locations-tabs__item location-tab" type="button">Черногория</button>
-              <button class="locations-tabs__item location-tab" type="button">Хорватия</button>
-            </div>
-            <div class="locations-info__list">
-              <div class="locations-info__item location-info">
+        </div>
+      </section>
+      <section class="locations-info section">
+        <div class="section__wrapper section__wrapper--locations-tabs">
+          <div class="locations-info__tabs locations-tabs">
+            <button class="locations-tabs__item location-tab location-tab--current" type="button">Греция</button>
+            <button class="locations-tabs__item location-tab" type="button">Албания</button>
+            <button class="locations-tabs__item location-tab" type="button">Македония</button>
+            <button class="locations-tabs__item location-tab" type="button">Черногория</button>
+            <button class="locations-tabs__item location-tab" type="button">Хорватия</button>
+          </div>
+        </div>
+        <div class="locations-info__list">
+          <div class="locations-info__item location-info">
+            <div class="section__wrapper section__wrapper--location-info">
+              <div class="section__wrapper section__wrapper--info-main">
                 <div class="location-info__main info-main">
-                  <h3 class="info-main__title">Греция</h3>
+                  <h2 class="info-main__title">Греция</h2>
                   <p class="info-main__description">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
                   <a class="btn btn--locations-info" href="#">Купить тур сейчас</a>
                 </div>
-                <div class="location-info__review info-review">
-                  <div class="info-review__wrapper">
-                    <h4 class="info-review__title">Отзывы</h4>
+              </div>
+              <div class="location-info__review info-review">
+                <div class="section__wrapper section__wrapper--info-review">
+                  <div class="info-review__group">
+                    <h3 class="info-review__title">Отзывы</h3>
                     <blockquote class="info-review__content review-content">
                       <p class="review-content__quote">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
                       <div class="review-content__author review-author">
                         <img class="review-author__photo" width="38" height="38" alt="Фото девушки с каре в элегантном платье" src="img/reviews-author.png">
-                        <cite class="review-author__name">Оксана Тодоренко</cite>
+                        <cite class="review-author__name">Влада Голицина</cite>
                       </div>
                     </blockquote>
                   </div>
@@ -125,7 +133,7 @@
         </div>
       </section>
       <section class="pricing section">
-        <div class="section__wrapper">
+        <div class="section__wrapper section__wrapper--pricing">
           <div class="pricing__about pricing-about">
             <h2 class="section__title section__title--pricing">Цены</h2>
             <p class="section__description section__description--pricing">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
@@ -135,10 +143,10 @@
             </div>
           </div>
           <div class="pricing__packages pricing-packages">
-            <div class="pricing-packages__item pricing-package pricing-package--marked">
+            <div class="pricing-packages__item pricing-package pricing-package--complex">
               <div class="pricing-package__group">
                 <div class="pricing-package__subgroup">
-                  <h3 class="pricing-package__title">Комплексный</h3>
+                  <h3 class="pricing-package__title pricing-package__title--complex">Комплексный</h3>
                   <p class="pricing-package__price">$1999</p>
                 </div>
                 <p class="pricing-package__description">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
@@ -151,10 +159,10 @@
               </ul>
               <a class="btn btn--pricing" href="#">Купить тур сейчас</a>
             </div>
-            <div class="pricing-packages__item pricing-package">
+            <div class="pricing-packages__item pricing-package pricing-package--economical">
               <div class="pricing-package__group">
                 <div class="pricing-package__subgroup">
-                  <h3 class="pricing-package__title">Экономный</h3>
+                  <h3 class="pricing-package__title pricing-package__title--economical">Экономный</h3>
                   <p class="pricing-package__price">$1399</p>
                 </div>
                 <p class="pricing-package__description">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
@@ -217,7 +225,7 @@
                 <li class="available-cities__item">Неаполь</li>
                 <li class="available-cities__item">Рим</li>
               </ul>
-              <ul class="available-cities__list">
+              <ul class="available-cities__list available-cities__list--wide">
                 <li class="available-cities__item">Корс</li>
                 <li class="available-cities__item">Ницца</li>
                 <li class="available-cities__item">Монако</li>
@@ -227,9 +235,9 @@
             </div>
           </div>
           <div class="main-footer__contacts footer-section company-contacts">
-            <h3 class="footer-section__title">Наши контакты</h3>
+            <h3 class="footer-section__title footer-section__title--company-contacts">Наши контакты</h3>
             <ul class="company-contacts__list">
-              <li class="company-contacts__item">
+              <li class="company-contacts__item company-contacts__item--email">
                 <a class="company-contacts__email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
               </li>
               <li class="company-contacts__item">
@@ -244,10 +252,10 @@
         </div>
       </div>
     </footer>
-    <section class="modal modal--order">
+    <section class="modal order">
       <h2 class="visually-hidden">Заказ тура</h2>
-      <div class="modal__content">
-        <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="modal__content order__content">
+        <form class="order__form order-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="order-form__title">Купить тур</p>
           <div class="order-form__group">
             <div class="order-form__subgroup">

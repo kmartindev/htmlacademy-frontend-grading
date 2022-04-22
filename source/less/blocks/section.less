@@ -11,6 +11,66 @@
   }
 }
 
+.section__wrapper--locations {
+  @media (min-width: @tablet-width) {
+    width: 616px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1170px;
+  }
+}
+
+.section__wrapper--locations-tabs {
+  width: auto;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+.section__wrapper--location-info {
+  width: auto;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 425px 1fr;
+    column-gap: 45px;
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+.section__wrapper--info-main {
+  @media (min-width: @desktop-width) {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.section__wrapper--info-review {
+  width: 268px;
+
+  @media (min-width: @tablet-width) {
+    width: 382px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.section__wrapper--pricing {
+  @media (min-width: @desktop-width) {
+    display: flex;
+
+  }
+}
+
 .section__title {
   margin: 0;
 
@@ -34,8 +94,21 @@
   }
 }
 
-.section__title--pricing {
+.section__title--locations {
+  margin-bottom: 21px;
+
   @media (min-width: @desktop-width) {
+    width: 360px;
+    margin-bottom: 65px;
+  }
+}
+
+.section__title--pricing {
+  margin-bottom: 20px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 49px;
+
     line-height: 90px;
   }
 }
@@ -47,15 +120,42 @@
   font-size: 16px;
   line-height: 28px;
   font-family: "Montserrat", "Arial", sans-serif;
+  text-align: center;
   color: @base-70;
   letter-spacing: -0.466667px;
-  text-align: center;
 
   @media (min-width: @desktop-width) {
     text-align: left;
   }
 }
 
+.section__description--locations {
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 330px;
+    margin: 0;
+    margin-bottom: 53px;
+  }
+}
+
 .section__description--pricing {
+  margin-bottom: 18px;
+
   line-height: 27px;
+  letter-spacing: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 60px;
+  }
 }

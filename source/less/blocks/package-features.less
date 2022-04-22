@@ -1,14 +1,35 @@
 .package-features {
   margin: 0;
   padding: 0;
+  padding-left: 30px;
 
   list-style: none;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 31px;
+  }
 }
 
 .package-features__item {
+  margin-bottom: 9px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   font-family: "Montserrat", "Arial", sans-serif;
   color: @base;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 14px;
+  }
+}
+
+.pricing-package--complex .package-features__item:first-child {
+  margin-bottom: 5px;
+}
+
+
+
+.package-features__item:last-child {
+  margin-bottom: 0;
 }

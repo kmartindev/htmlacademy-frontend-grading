@@ -1,5 +1,26 @@
+.footer-section {
+  border-bottom: 1px solid @extra;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.footer-section:last-child {
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    border-top: 1px solid @extra;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-top: none;
+  }
+}
+
 .footer-section__title {
   margin: 0;
+  margin-bottom: 20px;
 
   font-weight: 600;
   font-size: 18px;
@@ -13,6 +34,10 @@
   }
 }
 
+.footer-section__title--company-contacts {
+  margin-bottom: 22px;
+}
+
 .footer-section__title--for-companies {
   @media (min-width: @tablet-width) {
     text-align: center;
@@ -24,6 +49,8 @@
 }
 
 .footer-section__description {
+  margin: 0;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;

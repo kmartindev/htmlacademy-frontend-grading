@@ -1,5 +1,13 @@
+.info-main {
+  @media (min-width: @desktop-width) {
+    padding-top: 8px;
+    padding-bottom: 16px;
+  }
+}
+
 .info-main__title {
   margin: 0;
+  margin-bottom: 20px;
 
   font-weight: 600;
   font-size: 24px;
@@ -14,6 +22,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
+
     font-size: 55px;
     line-height: 90px;
     text-align: left;
@@ -23,6 +33,7 @@
 
 .info-main__description {
   margin: 0;
+  margin-bottom: 19px;
 
   font-weight: 400;
   font-size: 16px;
@@ -33,6 +44,9 @@
   letter-spacing: -0.466667px;
 
   @media (min-width: @desktop-width) {
+    width: 370px;
+    margin-bottom: 48px;
+
     text-align: left;
   }
 }

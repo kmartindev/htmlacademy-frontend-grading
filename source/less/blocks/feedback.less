@@ -1,7 +1,27 @@
 .feedback {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
   background-color: @background;
 
   @media (min-width: @tablet-width) {
-    background-color: @white;
+    padding-bottom: 74px;
+
+    background-color: @accent;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.feedback__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 20px 35px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
   }
 }

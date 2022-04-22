@@ -1,8 +1,49 @@
+.available-cities {
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 50px;
+    padding-bottom: 0;
+
+    border-right: 1px solid @extra;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 387px;
+    flex-shrink: 0;
+    padding-right: 0;
+  }
+}
+
+.available-cities__group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 130px 124px 133px;
+    gap: 0;
+  }
+}
+
 .available-cities__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.available-cities__list--wide {
+  grid-column: 1 / -1;
+
+  @media (min-width: @tablet-width) {
+    grid-column: auto;
+  }
 }
 
 .available-cities__item {
@@ -16,4 +57,12 @@
   @media (min-width: @tablet-width) {
     text-align: left;
   }
+}
+
+.available-cities__item {
+  margin-bottom: 10px;
+}
+
+.available-cities__item:last-child {
+  margin-bottom: 0;
 }

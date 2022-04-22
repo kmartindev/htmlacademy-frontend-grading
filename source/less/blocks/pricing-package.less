@@ -1,16 +1,65 @@
 .pricing-package {
+  position: relative;
+
+  margin-bottom: 30px;
+  padding: 30px 20px 96px;
+
   border-radius: 5px 5px 0 0;
   outline: 1px solid @base-30;
   outline-offset: -1px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    padding: 40px 30px 30px;
+  }
 }
 
-.pricing-package--marked {
+.pricing-package--economical {
+  padding: 30px 20px 83px;
+
+  @media (min-width: @desktop-width) {
+    padding: 40px 30px 30px;
+  }
+}
+
+.pricing-package:last-child {
+  margin-bottom: 0;
+}
+
+.pricing-package--complex {
   outline: 3px solid @accent;
   outline-offset: -3px;
 }
 
+.pricing-package__group {
+  margin-bottom: 30px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 61px;
+  }
+}
+
+.pricing-package__subgroup {
+  margin-bottom: 12px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 38px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
 .pricing-package__title {
   margin: 0;
+  margin-bottom: 10px;
 
   font-weight: 600;
   font-size: 24px;
@@ -21,15 +70,25 @@
   letter-spacing: -1.27273px;
 
   @media (min-width: @desktop-width) {
+    margin: 0;
+
     font-size: 28px;
     text-align: left;
   }
 }
 
-.pricing-package--marked .pricing-package__title {
+.pricing-package__title--complex {
   line-height: 34px;
   color: @accent;
   letter-spacing: 0;
+}
+
+.pricing-package__title--economical {
+  margin-bottom: 7px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .pricing-package__price {
@@ -47,7 +106,7 @@
   }
 }
 
-.pricing-package--marked .pricing-package__price {
+.pricing-package--complex .pricing-package__price {
   color: @accent;
 }
 
@@ -62,6 +121,8 @@
   color: @base;
 
   @media (min-width: @desktop-width) {
+    width: 290px;
+
     text-align: left;
   }
 }

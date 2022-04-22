@@ -1,23 +1,36 @@
 .location__link {
+  position: relative;
+
+  display: block;
+
   text-decoration: none;
 }
 
 .location__photo {
   display: block;
-  width: 100%;
-  height: auto;
-
-  @media (min-width: @tablet-width) {
-    width: 288px;
-  }
+  width: 288px;
+  height: 425px;
+  object-fit: cover;
 
   @media (min-width: @desktop-width) {
     width: 350px;
+    height: 430px;
   }
 }
 
 .location__name {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 215px;
+  height: 61px;
   margin: 0;
+  padding: 10px;
 
   font-weight: 500;
   font-size: 24px;
@@ -26,4 +39,6 @@
   text-align: center;
   color: @base;
   letter-spacing: -0.415px;
+
+  background-color: @white;
 }

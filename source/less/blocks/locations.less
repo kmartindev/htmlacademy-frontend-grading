@@ -1,1 +1,76 @@
-//
+.locations {
+  padding-top: 60px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 200px;
+  }
+}
+
+.locations__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.locations__item {
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+
+  // все
+
+  @media (min-width: @desktop-width) {
+    margin-right: 60px;
+    margin-bottom: 100px;
+  }
+}
+
+.locations__item:nth-last-child(-n + 2) {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.locations__item:last-child {
+  margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 60px;
+  }
+}
+
+.locations__item:nth-child(even) {
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 60px;
+  }
+}
+
+.locations__item:nth-child(3n) {
+  // каждый третий
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.locations__info {
+  padding-top: 5px;
+}
