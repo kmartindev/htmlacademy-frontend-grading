@@ -4,24 +4,58 @@
 
   background-color: @background;
 
+
   @media (min-width: @tablet-width) {
     padding-bottom: 74px;
 
     background-color: @accent;
+    background-image: url("../img/feedback-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 70px;
     padding-bottom: 70px;
+
+    background: none;
   }
 }
 
-.feedback__wrapper {
+.feedback__content {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     padding: 20px 35px 0;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -70px;
+      bottom: -70px;
+      left: 0;
+
+      width: 844px;
+
+      background-color: @accent;
+      background-image: url("../img/feedback-desktop.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/feedback-desktop@2x.jpg");
+      }
+    }
   }
 }

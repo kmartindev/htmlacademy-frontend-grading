@@ -18,6 +18,7 @@
 
 .review-author__name {
   display: block;
+  padding-left: 7px;
 
   font-style: normal;
   font-weight: 500;
@@ -27,4 +28,8 @@
   text-align: center;
   color: @base;
   letter-spacing: -0.466667px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
 }

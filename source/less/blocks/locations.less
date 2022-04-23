@@ -26,17 +26,44 @@
     margin-bottom: 40px;
   }
 
-  // все
-
   @media (min-width: @desktop-width) {
     margin-right: 60px;
     margin-bottom: 100px;
   }
 }
 
+// сброс снизу последние в ряду планшет
+
 .locations__item:nth-last-child(-n + 2) {
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
+  }
+}
+
+.locations__item:nth-last-child(-n + 3) {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+// сброс справа каждый второй планшет
+
+.locations__item:nth-child(even) {
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 60px;
+  }
+}
+
+// сброс справа каждый третий десктоп
+
+.locations__item:nth-child(3n) {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -53,21 +80,15 @@
   }
 }
 
-.locations__item:nth-child(even) {
-  @media (min-width: @tablet-width) {
-    margin-right: 0;
-  }
-
+.locations__item:nth-child(3n) {
   @media (min-width: @desktop-width) {
-    margin-right: 60px;
+    margin-left: 0;
   }
 }
 
-.locations__item:nth-child(3n) {
-  // каждый третий
-
+.locations__item:nth-child(3n + 1) {
   @media (min-width: @desktop-width) {
-    margin-right: 0;
+    margin-left: 0;
   }
 }
 

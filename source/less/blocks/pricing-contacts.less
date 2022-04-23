@@ -1,6 +1,15 @@
+.pricing-contacts {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .pricing-contacts__title {
   margin: 0;
   margin-bottom: 10px;
+  padding-right: 3px;
 
   font-weight: 500;
   font-size: 18px;
@@ -9,12 +18,21 @@
   text-align: center;
   color: @base-secondary;
 
+  @media (min-width: @tablet-width) {
+    padding-right: 0;
+  }
+
   @media (min-width: @desktop-width) {
+    margin-bottom: 12px;
+    padding-right: 3px;
+
     font-size: 22px;
   }
 }
 
 .pricing-contacts__phone {
+  position: relative;
+
   display: block;
 
   font-weight: 400;
@@ -24,7 +42,34 @@
   text-align: center;
   color: @accent;
 
+  &:active {
+    color: @accent-30;
+  }
+
   @media (min-width: @desktop-width) {
+    margin-left: -6px;
+    font-size: 20px;
     color: @black;
+
+    &:hover,
+    &:focus {
+      color: @accent;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.pricing-contacts__phone svg {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 2px;
+    left: -44px;
+
+    display: block;
   }
 }

@@ -2,15 +2,27 @@
   border-bottom: 1px solid @extra;
 
   @media (min-width: @tablet-width) {
+    border-right: 1px solid @extra;
     border-bottom: none;
   }
 }
 
+.footer-section:nth-child(2) {
+  @media (min-width: @tablet-width) {
+    border-right: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-right: 1px solid @extra;
+  }
+}
+
 .footer-section:last-child {
-  border: none;
+  border-bottom: none;
 
   @media (min-width: @tablet-width) {
     border-top: 1px solid @extra;
+    border-right: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -35,7 +47,7 @@
 }
 
 .footer-section__title--company-contacts {
-  margin-bottom: 22px;
+  margin-bottom: 28px;
 }
 
 .footer-section__title--for-companies {
@@ -59,6 +71,7 @@
   color: @base-secondary-50;
 
   @media (min-width: @desktop-width) {
+    width: 320px;
     text-align: left;
   }
 }
