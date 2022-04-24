@@ -47,6 +47,8 @@
 .main-nav__phone {
   display: none;
 
+  transition: all 300ms ease;
+
   @media (min-width: @desktop-width) {
     display: flex;
     align-items: center;
@@ -70,6 +72,8 @@
 }
 
 .main-nav__phone svg {
+  fill: none;
+
   @media (min-width: @desktop-width) {
     margin-top: 4px;
     margin-right: 16px;

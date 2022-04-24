@@ -1,0 +1,45 @@
+.order {
+  display: none;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 185px;
+
+  @media (min-width: @tablet-width) {
+    width: 720px;
+    padding: 0;
+  }
+}
+
+.order__content {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 334px 1fr;
+
+    &::before {
+      content: "";
+
+      display: block;
+      width: 334px;
+      min-height: 100%;
+
+      background-color: @main-img-bg;
+      background-image: url("../img/order-form-tablet.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/order-form-tablet@2x.jpg");
+      }
+    }
+  }
+}
+
+.order-form {
+  width: 288px;
+
+  @media (min-width: @tablet-width) {
+    width: 386px;
+    padding: 72px 60px 89px 58px;
+  }
+}

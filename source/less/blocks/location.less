@@ -57,11 +57,13 @@
   bottom: 0;
   left: 0;
 
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 
   background-color: @base-secondary-60;
+  transition: all 300ms ease;
 }
 
 .location__goal span {
@@ -85,6 +87,6 @@
 
 .location__link:hover .location__goal {
   @media (min-width: @desktop-width) {
-    display: flex;
+    opacity: 1;
   }
 }

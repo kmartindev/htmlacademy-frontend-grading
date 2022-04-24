@@ -1,3 +1,9 @@
+.order-form {
+  @media (min-width: @tablet-width) {
+    background-color: @background;
+  }
+}
+
 .order-form__title {
   margin: 0;
   margin-bottom: 50px;
@@ -8,6 +14,10 @@
   font-family: "Montserrat", "Arial", sans-serif;
   text-align: center;
   color: @grey;
+
+  @media (min-width: @tablet-width) {
+    margin-left: -3px;
+  }
 }
 
 .order-form__group {
@@ -15,11 +25,31 @@
 }
 
 .order-form__subgroup {
+  position: relative;
+
   margin-bottom: 20px;
 }
 
 .order-form__subgroup:last-child {
   margin-bottom: 0;
+}
+
+.order-form__subgroup--required {
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 15px;
+
+    width: 6px;
+    height: 7px;
+
+    background-image: url("../img/required.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .order-form__input {
@@ -40,6 +70,15 @@
   color: @base-secondary;
 }
 
-.order-form__input:invalid {
-  border-color: @accent;
+.order-form__country-code {
+  position: absolute;
+  top: 16.5px;
+  left: 26px;
+
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: @base-secondary;
+
+  pointer-events: none;
 }

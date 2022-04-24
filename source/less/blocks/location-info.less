@@ -1,7 +1,17 @@
 .location-info {
+  display: none;
+
   @media (min-width: @desktop-width) {
-    display: grid;
+    display: none;
     grid-template-columns: 425px 1fr;
     column-gap: 45px;
+  }
+}
+
+.location-info--current {
+  display: block;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
   }
 }

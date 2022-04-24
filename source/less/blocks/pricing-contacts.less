@@ -42,12 +42,15 @@
   text-align: center;
   color: @accent;
 
+  transition: all 300ms ease;
+
   &:active {
     color: @accent-30;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: -6px;
+
     font-size: 20px;
     color: @black;
 
@@ -64,6 +67,10 @@
 
 .pricing-contacts__phone svg {
   display: none;
+
+  color: @accent;
+
+  fill: none;
 
   @media (min-width: @desktop-width) {
     position: absolute;

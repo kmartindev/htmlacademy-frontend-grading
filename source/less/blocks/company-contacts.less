@@ -52,9 +52,26 @@
 .company-contacts__link {
   display: flex;
 
-  &:active {
+  transition: all 300ms ease;
+
+  &:hover svg,
+  &:focus svg {
+    color: @accent;
+  }
+
+  &:active,
+  &:active svg {
     color: @accent-30;
   }
+}
+
+.company-contacts__link svg {
+  width: 26px;
+  margin-right: 16px;
+  fill: none;
+  color: @extra;
+
+  transition: all 300ms ease;
 }
 
 .company-contacts__link--email {
@@ -70,37 +87,14 @@
   }
 }
 
+.company-contacts__link--email svg {
+  margin-top: -3px;
+}
+
 .company-contacts__link--phone {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   font-family: "Montserrat", "Arial", sans-serif;
   color: @accent;
-}
-
-.company-contacts__link svg {
-  width: 26px;
-  margin-right: 16px;
-}
-
-.company-contacts__link--email svg {
-  margin-top: -3px;
-}
-
-.company-contacts__link--email:hover path,
-.company-contacts__link--email:focus path {
-  fill: @accent;
-}
-
-.company-contacts__link--email:active path {
-  fill: @accent-30;
-}
-
-.company-contacts__link--phone:hover path,
-.company-contacts__link--phone:focus path {
-  stroke: @accent;
-}
-
-.company-contacts__link--phone:active path {
-  stroke: @accent-30;
 }

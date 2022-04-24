@@ -61,17 +61,16 @@
 
   background-color: @background;
 
+  transition: all 300ms ease;
+
   &:hover,
   &:focus {
     background-color: @extra;
   }
 
-  &:active {
+  &:active,
+  &:active svg {
     color: @grey-30;
-  }
-
-  &:active path {
-    fill-opacity: 0.3;
   }
 
   @media (min-width: @desktop-width) {
@@ -99,6 +98,8 @@
 }
 
 .menu__link svg {
+  color: @base-50;
+
   @media (min-width: @desktop-width) {
     display: none;
   }

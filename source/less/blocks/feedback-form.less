@@ -11,6 +11,8 @@
   @media (min-width: @desktop-width) {
     width: 656px;
     margin-left: auto;
+
+    box-shadow: 0px 4px 30px @shadow-10;
   }
 }
 
@@ -63,6 +65,8 @@
 }
 
 .feedback-form__subgroup {
+  position: relative;
+
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
@@ -72,6 +76,24 @@
 
 .feedback-form__subgroup:last-child {
   margin-bottom: 0;
+}
+
+.feedback-form__subgroup--required {
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 15px;
+
+    width: 6px;
+    height: 7px;
+
+    background-image: url("../img/required.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .feedback-form__input {
@@ -92,6 +114,19 @@
   color: @base-secondary;
 }
 
-.feedback-form__input:invalid {
-  border-color: @accent;
+input[type=tel] {
+  padding-left: 50px;
+}
+
+.feedback-form__country-code {
+  position: absolute;
+  top: 16.5px;
+  left: 26px;
+
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: @base-secondary;
+
+  pointer-events: none;
 }
