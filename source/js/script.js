@@ -20,10 +20,10 @@ const noticePopup = document.querySelector('.notice');
 const noticeMessage = document.querySelector('.notice__message');
 const orderForm = document.querySelector('.order-form');
 
-// Menu | NoJS
-
-menuToggle.classList.remove(TOGGLE_NOJS_CLASS);
-menu.classList.remove(MENU_NOJS_CLASS);
+// // Menu | NoJS
+//
+// menuToggle.classList.remove(TOGGLE_NOJS_CLASS);
+// menu.classList.remove(MENU_NOJS_CLASS);
 
 // Menu | Show/hide when toggle
 
